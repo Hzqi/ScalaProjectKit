@@ -1,6 +1,6 @@
 # Scala + Play 的 WebProjectKit 简单脚手架
 
-(下面的README.md中使用mermiad语法，如果GitHub、GitLab显示不了那就down下来用Typora看:())
+(下面的README.md中使用mermiad语法，如果GitHub、GitLab显示不了图表那就down下来用Typora看:())
 
 ## 简单介绍
 
@@ -20,21 +20,21 @@
 ```
 projectkit
 	|- app 项目源码
-			|- controllers 控制层
-			|- modules 依赖注入模块层
-      |- service 业务层
-      |- views 渲染层
-      |- Filters.scala 过滤器、拦截器
+	    |- controllers 控制层
+	    |- modules 依赖注入模块层
+	    |- service 业务层
+	    |- views 渲染层
+	    |- Filters.scala 过滤器、拦截器
 	|- conf 项目配置
-			|- application.conf 项目配置信息
-			|- logback.xml 日志配置信息
-			|- messages I18N国际化Message配置
-			|- routes 路由配置
+	    |- application.conf 项目配置信息
+	    |- logback.xml 日志配置信息
+	    |- messages I18N国际化Message配置
+	    |- routes 路由配置
 	|- modules 模块目录
-			|- common 通用模块
-			|- role-control 权限控制模块
-			|- dynamic-parameter 动态查询参数模块
-			|- dynamic-crud 动态Crud模块
+	    |- common 通用模块
+	    |- role-control 权限控制模块
+	    |- dynamic-parameter 动态查询参数模块
+	    |- dynamic-crud 动态Crud模块
 	|- project sbt项目信息
 	|- build.sbt sbt项目构建信息
 ```
