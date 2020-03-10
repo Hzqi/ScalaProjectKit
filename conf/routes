@@ -1,0 +1,22 @@
+# Routes
+# This file defines all application role.routes (Higher priority role.routes first)
+# https://www.playframework.com/documentation/latest/ScalaRouting
+# ~~~~
+
+# An example controller showing a sample home page
+GET     /                           controllers.HomeController.index
+GET     /try/set/:key/:value        controllers.TryController.setValue(key: String, value: String)
+GET     /try/get/:key               controllers.TryController.getValue(key:String)
+GET     /trySomething/:withPage               controllers.TryController.trySomething(withPage:Boolean)
+GET     /trySomething2              controllers.TryController.trySomething2
+GET     /trySomething3              controllers.TryController.trySomething3
+GET     /trySomething4              controllers.TryController.trySomething4
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
+
+
+# 鉴权模块的路由
+-> /role role.Routes
+# 动态参数的路由
+-> /dynamic dynamic.Routes

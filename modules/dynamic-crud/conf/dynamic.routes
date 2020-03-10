@@ -1,0 +1,5 @@
+
+GET     /crud/:model        controllers.dynamic.TryController.query(model)
+POST    /crud/:model        controllers.dynamic.TryController.insert(model)
+PUT     /crud/:model        controllers.dynamic.TryController.update(model)
+DELETE  /crud/:model/:id    controllers.dynamic.TryController.delete(model,id)
